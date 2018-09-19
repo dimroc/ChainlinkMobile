@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E5F578021529C7000A3F467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F577F21529C7000A3F467 /* AppDelegate.swift */; };
+		5E5F578221529C7000A3F467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F578121529C7000A3F467 /* ViewController.swift */; };
+		5E5F578521529C7000A3F467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F578321529C7000A3F467 /* Main.storyboard */; };
+		5E5F578721529C7100A3F467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F578621529C7100A3F467 /* Assets.xcassets */; };
+		5E5F578A21529C7100A3F467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F578821529C7100A3F467 /* LaunchScreen.storyboard */; };
+		5E889FA42152A11A00058649 /* Chainlink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E889FA32152A11A00058649 /* Chainlink.framework */; };
+		5E889FA72152C60F00058649 /* password.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5E889FA52152C60F00058649 /* password.txt */; };
+		5E889FA82152C60F00058649 /* apicredentials in Resources */ = {isa = PBXBuildFile; fileRef = 5E889FA62152C60F00058649 /* apicredentials */; };
+		5E889FAB2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f in Resources */ = {isa = PBXBuildFile; fileRef = 5E889FAA2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f */; };
+		5E88A0462152F86C00058649 /* Embassy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E88A0452152F86B00058649 /* Embassy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E5F577C21529C7000A3F467 /* ChainlinkMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChainlinkMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E5F577F21529C7000A3F467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E5F578121529C7000A3F467 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E5F578421529C7000A3F467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E5F578621529C7100A3F467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E5F578921529C7100A3F467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E5F578B21529C7100A3F467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E889FA32152A11A00058649 /* Chainlink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chainlink.framework; sourceTree = "<group>"; };
+		5E889FA52152C60F00058649 /* password.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = password.txt; sourceTree = "<group>"; };
+		5E889FA62152C60F00058649 /* apicredentials */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apicredentials; sourceTree = "<group>"; };
+		5E889FAA2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f"; sourceTree = "<group>"; };
+		5E88A0452152F86B00058649 /* Embassy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Embassy.framework; path = Carthage/Build/iOS/Embassy.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E5F577921529C7000A3F467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E88A0462152F86C00058649 /* Embassy.framework in Frameworks */,
+				5E889FA42152A11A00058649 /* Chainlink.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E5F577321529C7000A3F467 = {
+			isa = PBXGroup;
+			children = (
+				5E889FA32152A11A00058649 /* Chainlink.framework */,
+				5E5F577E21529C7000A3F467 /* ChainlinkMobile */,
+				5E5F577D21529C7000A3F467 /* Products */,
+				5E88A0442152F86B00058649 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E5F577D21529C7000A3F467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E5F577C21529C7000A3F467 /* ChainlinkMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E5F577E21529C7000A3F467 /* ChainlinkMobile */ = {
+			isa = PBXGroup;
+			children = (
+				5E889FA92152CC7600058649 /* clroot */,
+				5E5F577F21529C7000A3F467 /* AppDelegate.swift */,
+				5E5F578121529C7000A3F467 /* ViewController.swift */,
+				5E5F578321529C7000A3F467 /* Main.storyboard */,
+				5E5F578621529C7100A3F467 /* Assets.xcassets */,
+				5E5F578821529C7100A3F467 /* LaunchScreen.storyboard */,
+				5E5F578B21529C7100A3F467 /* Info.plist */,
+			);
+			path = ChainlinkMobile;
+			sourceTree = "<group>";
+		};
+		5E889FA92152CC7600058649 /* clroot */ = {
+			isa = PBXGroup;
+			children = (
+				5E889FAA2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f */,
+				5E889FA62152C60F00058649 /* apicredentials */,
+				5E889FA52152C60F00058649 /* password.txt */,
+			);
+			path = clroot;
+			sourceTree = "<group>";
+		};
+		5E88A0442152F86B00058649 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E88A0452152F86B00058649 /* Embassy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E5F577B21529C7000A3F467 /* ChainlinkMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E5F578E21529C7100A3F467 /* Build configuration list for PBXNativeTarget "ChainlinkMobile" */;
+			buildPhases = (
+				5E5F577821529C7000A3F467 /* Sources */,
+				5E5F577921529C7000A3F467 /* Frameworks */,
+				5E5F577A21529C7000A3F467 /* Resources */,
+				5E88A0472152F87900058649 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChainlinkMobile;
+			productName = ChainlinkMobile;
+			productReference = 5E5F577C21529C7000A3F467 /* ChainlinkMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E5F577421529C7000A3F467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Dimitri Roche";
+				TargetAttributes = {
+					5E5F577B21529C7000A3F467 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 5E5F577721529C7000A3F467 /* Build configuration list for PBXProject "ChainlinkMobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E5F577321529C7000A3F467;
+			productRefGroup = 5E5F577D21529C7000A3F467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E5F577B21529C7000A3F467 /* ChainlinkMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E5F577A21529C7000A3F467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5F578A21529C7100A3F467 /* LaunchScreen.storyboard in Resources */,
+				5E889FA72152C60F00058649 /* password.txt in Resources */,
+				5E5F578721529C7100A3F467 /* Assets.xcassets in Resources */,
+				5E889FA82152C60F00058649 /* apicredentials in Resources */,
+				5E5F578521529C7000A3F467 /* Main.storyboard in Resources */,
+				5E889FAB2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E88A0472152F87900058649 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Embassy.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Embassy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E5F577821529C7000A3F467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5F578221529C7000A3F467 /* ViewController.swift in Sources */,
+				5E5F578021529C7000A3F467 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E5F578321529C7000A3F467 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E5F578421529C7000A3F467 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E5F578821529C7100A3F467 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E5F578921529C7100A3F467 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E5F578C21529C7100A3F467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E5F578D21529C7100A3F467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E5F578F21529C7100A3F467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R23V2RJ26;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ChainlinkMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimroc.ChainlinkMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E5F579021529C7100A3F467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R23V2RJ26;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ChainlinkMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimroc.ChainlinkMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E5F577721529C7000A3F467 /* Build configuration list for PBXProject "ChainlinkMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5F578C21529C7100A3F467 /* Debug */,
+				5E5F578D21529C7100A3F467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E5F578E21529C7100A3F467 /* Build configuration list for PBXNativeTarget "ChainlinkMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5F578F21529C7100A3F467 /* Debug */,
+				5E5F579021529C7100A3F467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E5F577421529C7000A3F467 /* Project object */;
+}

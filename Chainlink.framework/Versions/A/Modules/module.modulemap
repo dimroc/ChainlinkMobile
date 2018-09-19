@@ -1,0 +1,8 @@
+framework module "Chainlink" {
+	header "ref.h"
+    header "Chainlink.objc.h"
+    header "universe.objc.h"
+    header "Chainlink.h"
+
+    export *
+}
