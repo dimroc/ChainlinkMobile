@@ -18,6 +18,7 @@
 		5E889FAB2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f in Resources */ = {isa = PBXBuildFile; fileRef = 5E889FAA2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f */; };
 		5E88A0462152F86C00058649 /* Embassy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E88A0452152F86B00058649 /* Embassy.framework */; };
 		5E88A04B21541D9900058649 /* EchoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E88A04A21541D9900058649 /* EchoServer.swift */; };
+		5E88A04D21542E8800058649 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E88A04C21542E8800058649 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5E889FAA2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f"; sourceTree = "<group>"; };
 		5E88A0452152F86B00058649 /* Embassy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Embassy.framework; path = Carthage/Build/iOS/Embassy.framework; sourceTree = "<group>"; };
 		5E88A04A21541D9900058649 /* EchoServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoServer.swift; sourceTree = "<group>"; };
+		5E88A04C21542E8800058649 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E88A04D21542E8800058649 /* SwiftyJSON.framework in Frameworks */,
 				5E88A0462152F86C00058649 /* Embassy.framework in Frameworks */,
 				5E889FA42152A11A00058649 /* Chainlink.framework in Frameworks */,
 			);
@@ -95,6 +98,7 @@
 		5E88A0442152F86B00058649 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E88A04C21542E8800058649 /* SwiftyJSON.framework */,
 				5E88A0452152F86B00058649 /* Embassy.framework */,
 			);
 			name = Frameworks;
@@ -180,11 +184,13 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Embassy.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Embassy.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

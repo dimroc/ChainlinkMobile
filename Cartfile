@@ -1,1 +1,2 @@
 github "envoy/Embassy" ~> 4.0
+github "SwiftyJSON/SwiftyJSON" ~> 4.0
