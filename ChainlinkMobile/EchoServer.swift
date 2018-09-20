@@ -6,42 +6,49 @@
 //  Copyright © 2018 Dimitri Roche. All rights reserved.
 //
 
-import Foundation
 import Embassy
+import SwiftyJSON
 
 class EchoServer {
+    typealias Callback = (JSON) -> Void
     let loop = try! SelectorEventLoop(selector: try! KqueueSelector())
-    let server: DefaultHTTPServer
+    var server: DefaultHTTPServer!
 
-    init() {
-        server = DefaultHTTPServer(eventLoop: loop, port: 6690) {(
+    func start(_ callback: @escaping Callback = { _ in }) {
+        server = DefaultHTTPServer(eventLoop: loop, port: 6690, app: handler(callback))
+        try! server.start()
+        DispatchQueue.global(qos: .utility).async {
+            self.loop.runForever()
+        }
+    }
+
+    private func handler(_ callback: @escaping Callback) -> SWSGI {
+        return {
+            (
             environ: [String: Any],
             startResponse: ((String, [(String, String)]) -> Void),
-            sendBody: ((Data) -> Void)) in
-
+            sendBody: ((Data) -> Void)
+            ) in
             print("--- Received POST environ", environ)
 
             let input = environ["swsgi.input"] as! SWSGIInput
             var data = Data()
             input { d in data.append(d) }
 
-            guard let dataString = String(data: data, encoding: .utf8) else {
-                print("--- Unable to decode input as string", data)
-                startResponse("500 Internal Server Error", [])
-                sendBody(Data())
-                return
+            guard let json = try? JSON(data: data) else {
+                return self.decodeError(data, startResponse: startResponse, sendBody: sendBody)
             }
 
-            print("--- Received POST content", dataString)
+            print("--- Received POST content", json)
             startResponse("200 OK", [])
             sendBody(Data())
+            callback(json)
         }
     }
 
-    func start() {
-        try! server.start()
-        DispatchQueue.global(qos: .utility).async {
-            self.loop.runForever()
-        }
+    private func decodeError(_ data: Data, startResponse: ((String, [(String, String)]) -> Void), sendBody: ((Data) -> Void)) -> Void {
+        print("--- Unable to decode input", data)
+        startResponse("500 Internal Server Error", [])
+        sendBody(Data())
     }
 }

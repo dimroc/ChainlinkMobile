@@ -8,14 +8,26 @@
 
 import UIKit
 import Chainlink
+import SwiftyJSON
 
 class ViewController: UIViewController {
-    let es = EchoServer()
+    @IBOutlet weak var tableView: UITableView!
+
+    private let es = EchoServer()
+    private var echoes = [JSON]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
-        es.start()
+        es.start() { json in
+            self.echoes.append(json)
+            DispatchQueue.main.async { [unowned self] in
+                self.tableView.reloadData()
+            }
+        }
 
         initializeAccountKey()
         let pwd = Bundle.main.path(forResource: "password", ofType: ".txt")
@@ -39,3 +51,19 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return echoes.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let echo = echoes[indexPath.row]
+        return updateCell(echo, cell)
+    }
+
+    func updateCell(_ echo: JSON, _ cell: UITableViewCell) -> UITableViewCell {
+        cell.textLabel?.text = echo["address"].string
+        return cell
+    }
+}
