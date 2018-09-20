@@ -17,6 +17,7 @@
 		5E889FA82152C60F00058649 /* apicredentials in Resources */ = {isa = PBXBuildFile; fileRef = 5E889FA62152C60F00058649 /* apicredentials */; };
 		5E889FAB2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f in Resources */ = {isa = PBXBuildFile; fileRef = 5E889FAA2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f */; };
 		5E88A0462152F86C00058649 /* Embassy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E88A0452152F86B00058649 /* Embassy.framework */; };
+		5E88A04B21541D9900058649 /* EchoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E88A04A21541D9900058649 /* EchoServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5E889FA62152C60F00058649 /* apicredentials */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apicredentials; sourceTree = "<group>"; };
 		5E889FAA2152D08800058649 /* UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UTC--2017-01-05T20-42-24.637Z--9ca9d2d5e04012c9ed24c0e513c9bfaa4a2dd77f"; sourceTree = "<group>"; };
 		5E88A0452152F86B00058649 /* Embassy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Embassy.framework; path = Carthage/Build/iOS/Embassy.framework; sourceTree = "<group>"; };
+		5E88A04A21541D9900058649 /* EchoServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoServer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				5E5F578621529C7100A3F467 /* Assets.xcassets */,
 				5E5F578821529C7100A3F467 /* LaunchScreen.storyboard */,
 				5E5F578B21529C7100A3F467 /* Info.plist */,
+				5E88A04A21541D9900058649 /* EchoServer.swift */,
 			);
 			path = ChainlinkMobile;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E88A04B21541D9900058649 /* EchoServer.swift in Sources */,
 				5E5F578221529C7000A3F467 /* ViewController.swift in Sources */,
 				5E5F578021529C7000A3F467 /* AppDelegate.swift in Sources */,
 			);

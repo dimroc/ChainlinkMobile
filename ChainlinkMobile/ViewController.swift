@@ -10,13 +10,16 @@ import UIKit
 import Chainlink
 
 class ViewController: UIViewController {
+    let es = EchoServer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        es.start()
 
         initializeAccountKey()
         let pwd = Bundle.main.path(forResource: "password", ofType: ".txt")
         let api = Bundle.main.path(forResource: "apicredentials", ofType: "")
-
         DispatchQueue.global(qos: .utility).async {
             ChainlinkStart(pwd, api)
         }
