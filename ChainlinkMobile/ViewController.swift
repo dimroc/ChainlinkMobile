@@ -10,16 +10,12 @@ import UIKit
 import Chainlink
 import SwiftyJSON
 
-class ViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-
+class ViewController: UITableViewController {
     private let es = EchoServer()
     private var echoes = [JSON]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
         es.start() { json in
@@ -51,19 +47,25 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension ViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return echoes.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let echo = echoes[indexPath.row]
         return updateCell(echo, cell)
     }
 
     func updateCell(_ echo: JSON, _ cell: UITableViewCell) -> UITableViewCell {
-        cell.textLabel?.text = echo["address"].string
+        let topics = echo["topics"].array!
+        let jobIdTopic = topics[1].string
+        let blockNumber = echo["blockNumber"].string
+        if cell.textLabel != nil {
+            cell.textLabel?.text = blockNumber
+        }
+
         return cell
     }
 }
